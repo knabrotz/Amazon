@@ -58,6 +58,10 @@ namespace Amazon
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    "Paging", "Page{pageNum}", new { Controller = "Home", action = "Index" }
+                    );
+
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
