@@ -22,4 +22,14 @@
             <li>@Model.PageCount pages</li>
         </ul>
     </div>
+
+    <form method="post" asp-page="/Purchase">
+        <input type="hidden" asp-for="@Model.BookId"/>
+        <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+
+        <span class="card-text">
+            <button type="submit" class="btn btn-success button-sm float-right">Purchase</button>
+        </span>
+
+    </form>
 </div>
