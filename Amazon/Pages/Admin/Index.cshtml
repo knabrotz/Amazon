@@ -1,0 +1,19 @@
+﻿@page "/admin"
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Bookstore Admin</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <base href="/" />
+</head>
+<body>
+    <component type="typeof(Amazon.Pages.Admin.Routed)" render-mode="Server" />
+    <script src="/_framework/blazor.server.js"></script>
+</body>
+</html>
+
+@model Amazon.Pages.Admin.IndexModel
+@{
+}
