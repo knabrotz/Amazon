@@ -1,5 +1,12 @@
 ﻿@page "/admin"
 
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+
+@model Amazon.Pages.Admin.IndexModel
+@{
+}
+
 <!DOCTYPE html>
 
 <html>
@@ -14,6 +21,4 @@
 </body>
 </html>
 
-@model Amazon.Pages.Admin.IndexModel
-@{
-}
+
